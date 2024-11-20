@@ -1,6 +1,7 @@
 package com.example.tugas_pertemuan8.ui.view.screen
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -56,5 +57,30 @@ fun DetailView(
         ) {
             Text(text = "Kembali")
         }
+    }
+}
+
+@Composable
+fun Detailmhs(
+    judul: String,
+    isinya: String
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(10.dp)
+    ) {
+        Text(
+            text = judul,
+            modifier = Modifier.weight(0.8f)
+        )
+        Text(
+            text = ":",
+            modifier = Modifier.weight(0.2f)
+        )
+        Text(
+            text = isinya,
+            modifier = Modifier.weight(2f)
+        )
     }
 }
