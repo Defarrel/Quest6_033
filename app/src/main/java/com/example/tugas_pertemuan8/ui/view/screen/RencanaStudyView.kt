@@ -59,7 +59,7 @@ fun RencanaStudiView(
                .padding(16.dp), verticalAlignment = Alignment.CenterVertically
         ){
             Image(
-                painter = painterResource(id = R.drawable.waguri),
+                painter = painterResource(id = R.drawable.ippo),
                 contentDescription = "",
                 modifier = Modifier
                     .size(50.dp)
