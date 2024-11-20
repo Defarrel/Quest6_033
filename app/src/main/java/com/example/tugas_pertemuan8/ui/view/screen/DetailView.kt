@@ -12,5 +12,14 @@ fun DetailView(
     modifier: Modifier = Modifier,
     onBackButton: () -> Unit
 ) {
+    val ListDataMhs = listOf(
+        Pair("NIM", dataMhs.nim),
+        Pair("Nama", dataMhs.nama),
+        Pair("Email", dataMhs.email)
+    )
 
+    val ListDataKRS = listOf(
+        Pair("Mata Kuliah", dataKRS.namaMK),
+        Pair("Kelas", dataKRS.kelas)
+    )
 }
