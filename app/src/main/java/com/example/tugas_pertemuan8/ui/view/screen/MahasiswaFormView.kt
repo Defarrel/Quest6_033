@@ -42,7 +42,7 @@ import com.example.tugas_pertemuan8.R
 
 @Composable
 fun MahasiswaFormView(
-    modifier: Modifier,
+    modifier: Modifier = Modifier,
     onSubmitButtonClicked: (MutableList<String>) -> Unit,
     onBackButtonClicked: ()->Unit
 ){

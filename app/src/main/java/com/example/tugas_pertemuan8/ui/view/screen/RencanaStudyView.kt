@@ -47,7 +47,7 @@ import com.example.tugas_pertemuan8.ui.widget.DynamicSelectField
 fun RencanaStudiView(
     mahasiswa: Mahasiswa,
     onSubmitButtonClicked: (MutableList<String>) -> Unit,
-    onBackButtonClicked: ()->Unit
+    onBackButtonClicked: ()->Unit,
 ){
     var checked by remember {
         mutableStateOf(false)
