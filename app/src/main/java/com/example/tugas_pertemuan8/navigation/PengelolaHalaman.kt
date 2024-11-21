@@ -73,6 +73,7 @@ fun MahasiswaApp(
             DetailView(
                 dataMhs = mahasiswaUiState,
                 dataKRS = krsUiState,
+                mahasiswa = mahasiswaUiState,
                 modifier = Modifier,
                 onBackButton = { navController.popBackStack() }
             )
