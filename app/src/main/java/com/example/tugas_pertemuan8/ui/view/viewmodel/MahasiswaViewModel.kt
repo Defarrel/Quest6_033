@@ -1,12 +1,13 @@
 package com.example.tugas_pertemuan8.ui.view.viewmodel
 
+import androidx.lifecycle.ViewModel
 import com.example.tugas_pertemuan8.model.Mahasiswa
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 
-class MahasiswaViewModel {
+class MahasiswaViewModel : ViewModel() {
     //only access internal class
     private val _dataModel = MutableStateFlow(Mahasiswa())
 
