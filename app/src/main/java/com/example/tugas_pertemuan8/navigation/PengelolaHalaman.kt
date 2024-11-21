@@ -31,6 +31,7 @@ fun MahasiswaApp(
     navController: NavHostController = rememberNavController()
 ) {
     val mahasiswaUiState = mahasiswaViewModel.dataModel.collectAsState().value
+    val krsUiState = krsViewModel.krsStateUi.collectAsState().value
 
     NavHost(
         navController = navController,
@@ -67,6 +68,13 @@ fun MahasiswaApp(
                 }
             )
         }
-
+        composable(route = Halaman.Tampil.name) {
+            DetailView(
+                dataMhs = mahasiswaUiState,
+                dataKRS = krsUiState,
+                modifier = Modifier,
+                onBackButton = { navController.popBackStack() }
+            )
+        }
     }
 }
